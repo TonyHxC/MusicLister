@@ -34,7 +34,7 @@ p {
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 100px;
     line-height: 1.6;
   }
 }
@@ -286,6 +286,7 @@ ul.banner-social-buttons {
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
+  
 }
 footer {
   padding: 50px 0;
