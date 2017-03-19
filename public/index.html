@@ -240,7 +240,7 @@
 	  	
 	  function generatePlaylist(){
 	  		  $.ajax({
-                url: 'https://api.spotify.com/v1/users/1163448935/playlists',
+                url: 'https://api.spotify.com/v1/users/' + uid + '/playlists',
                 headers: {
                   'Authorization': 'Bearer ' + access_token
                 },
