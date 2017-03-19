@@ -3430,8 +3430,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-xlg,
 .btn-group-lg > .btn {
-  padding: 35px 42px;
-  font-size: 40px;
+  padding: 40px 48px;
+  font-size: 50px;
   line-height: 1.3333333;
   border-radius: 10px;
 }
