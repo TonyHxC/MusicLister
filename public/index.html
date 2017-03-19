@@ -44,7 +44,7 @@
 			<div class="col-sm-12">
 					<img src="../Images/vinyl.png" width="700" height="400" alt="Music Lister" >
 					<br>
-					<h2 class="text-center" >Welcome to Music Lister</h2>		
+					<h2 class="text-center" >Music Lister</h2>		
 					<br>
 					<a href="/login" class="btn btn-default btn-xlg">Log in with Spotify</a>
 				</div>
@@ -54,7 +54,7 @@
       <div id="loggedin">
 		<div id = "Welcome">
 		<br><br>
-		<h2>Welcome to Music Lister</h2>
+		<h2 class="text-center">Welcome to Music Lister</h2>
 		
 		<p>This is a small project I am working on to further develop my skills. I will be adding various features over time. Enjoy</p>	
 		<h5>-Tony</h5>
@@ -90,9 +90,6 @@
             <dt>Display name</dt><dd class="clearfix">{{display_name}}</dd>
             <dt>Id</dt><dd>{{id}}</dd>
             <dt>Email</dt><dd>{{email}}</dd>
-            <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
-            <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
-            <dt>Profile Image</dt><dd class="clearfix"><a href="{{images.0.url}}">{{images.0.url}}</a></dd>
             <dt>Country</dt><dd>{{country}}</dd>
           </dl>
         </div>
@@ -100,12 +97,10 @@
     </script>
 	
 	<script id="user-top-artists-template" type="text/x-handlebars-template">
-
-
 		<br></br></br>
 		 {{#each items}}
 		<h3 >{{name}}</h3>
-		<img class="media-object floating-box" width="150" src="{{images.0.url}}" />
+		<img width="150" src="{{images.0.url}}" />
 		{{/each}}
     </script>
 	
@@ -119,7 +114,7 @@
 	
 
     <script id="oauth-template" type="text/x-handlebars-template">
-      <h2>oAuth info</h2>
+      <h2></h2>
       <dl class="dl-horizontal">
         <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
         <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}></dd>
