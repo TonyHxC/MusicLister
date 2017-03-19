@@ -72,11 +72,6 @@
 		<div id="user-top-artists">
         </div>
 		<br><br><br><br><br>
-		 <h2>Top Tracks</h2>
-			  <button onclick="generatePlaylist()">Generate Playlist</button>
-					<div id="user-top-tracks">
-        </div>
-		
 
         <div id="oauth">
         </div>
@@ -168,9 +163,7 @@
 
             userTopArtistsPlaylistPlaceholder = document.getElementById('user-playlist-generated');
 	  
-	    var userTopTracksSource = document.getElementById('user-top-tracks-template').innerHTML,
-            userTopTracksTemplate = Handlebars.compile(userTopTracksSource),
-            userTopTracksPlaceholder = document.getElementById('user-top-tracks');
+
 
         var userProfileSource = document.getElementById('user-profile-template').innerHTML,
             userProfileTemplate = Handlebars.compile(userProfileSource),
@@ -319,17 +312,7 @@
 		}
 		
 		
-		
-		$.ajax({
-                url: 'https://api.spotify.com/v1/me/top/tracks',
-                headers: {
-                  'Authorization': 'Bearer ' + access_token
-                },
-                success: function(response) {
-                  userTopTracksPlaceholder.innerHTML = userTopTracksTemplate(response);
 
-                }
-            });
 	
 	
 
