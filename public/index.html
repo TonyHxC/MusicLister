@@ -66,11 +66,6 @@
 		<br>
 		      <h3>Top Artists</h3>
 			  <div id="shareBtn" class="btn btn-success clearfix">Share</div>
-
-<p style="margin-top: 50px">
-  <hr />
-  <a class="btn btn-small"  href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Share Dialog Documentation</a>
-</p>
 	  <button onclick="generatePlaylist() " class="btn btn-default btn-xlg">Generate Playlist</button>
 	  		<div id="user-playlist-generated">
 		</div>
@@ -141,7 +136,7 @@
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
-      appId: '{942329192570998}',
+      appId: '942329192570998',
       version: 'v2.7' // or v2.1, v2.2, v2.3, ...
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
